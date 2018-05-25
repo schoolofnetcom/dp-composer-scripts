@@ -1,0 +1,20 @@
+{
+    "name": "erikfig/dp-composer-scripts",
+    "authors": [
+        {
+            "name": "Erik Figueiredo",
+            "email": "erik.figueiredo@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ErikFig\\": "src"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": "echo 'Evento disparado'",
+        "pre-autoload-dump": "ErikFig\\ComposerEvents::postAutoloadDump",
+        "start": "php -S localhost:8080"
+    }
+}
